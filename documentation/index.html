@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header id="main-header">
+        <div id="menubtn">
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
+        </div>
+        <nav id="navbar">
+            <header id="logo-img">
+                <p>Python Docs</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png" id="logo-png"/>
+                <div id="closebtn">x</div>
+            </header>
+
+            <a href="#Introduction" class="nav-link">Introduction</a>
+            <a href="#pre-reqs" class="nav-link">Pre-Reqs</a>
+            <a href="#Writing_our_first_program" class="nav-link">Writing Our first program</a>
+            <a href="#Python_indentation" class="nav-link">Python indentation</a>
+            <a href="#if_statements" class="nav-link">If Statements</a>
+            <a href="#loops" class="nav-link">Loops</a>
+        </nav>
+    </header>
+    <main id="main-doc">
+
+        <section class="main-section" id="Introduction">
+            <header>
+                <h3>Introduction</h3>
+            </header>
+            <p>
+                Python is simple to use, but it is a real programming language, offering much more structure and support
+                for large programs than shell scripts or batch files can offer. On the other hand, Python also offers
+                much more error checking than C, and, being a very-high-level language, it has high-level data types
+                built in, such as flexible arrays and dictionaries. Because of its more general data types Python is
+                applicable to a much larger problem domain than Awk or even Perl, yet many things are at least as easy
+                in Python as in those languages.
+            </p>
+            <p>
+                Python enables programs to be written compactly and readably. Programs written in Python are typically
+                much shorter than equivalent C, C++, or Java programs, for several reasons:
+            <ul>
+                <li>the high-level data types allow you to express complex operations in a single statement;
+                </li>
+
+                <li>statement grouping is done by indentation instead of beginning and ending brackets;</li>
+
+                <li> no variable or argument declarations are necessary.</li>
+            </ul>
+            </p>
+        </section>
+        <section class="main-section" id="pre-reqs">
+            <header>
+                <h3>Pre-Reqs</h3>
+            </header>
+            <p>
+                Python students should know before getting started.
+            <ol>
+                <li>Learn the difference between front-end and back-end</li>
+                <li>Understand what you can do with Python</li>
+                <li>Install Python (on your PC or Mac)</li>
+                <li>Python 2 vs. Python 3 — Know the difference</li>
+                <li>Understand what jobs hire Python developers </li>
+            </ol>
+            </p>
+        </section>
+        <section class="main-section" id="Writing_our_first_program">
+            <header>
+                <h3>Writing our first program</h3>
+
+            </header>
+            <p>Just type in the following code after you start the interpreter.</p>
+            <code>
+                # Script Begins<br>
+                print("Hello World")<br>
+                # Scripts Ends<br>
+  
+            </code>
+        </section>
+        <section class="main-section" id="Python_indentation">
+            <header>
+                <h3>Python Indentation</h3>
+            </header>
+            <p>
+                Indentation refers to the spaces at the beginning of a code line.</p>
+            <p>
+                Where in other programming languages the indentation in code is for readability only, the indentation in
+                Python is very important.
+            </p>
+            <p>
+                Python uses indentation to indicate a block of code.
+            </p>
+            <code>
+                if 5 > 2:<br>
+  &nbsp;&nbsp;&nbsp; print("Five is greater than two!")
+            </code>
+        </section>
+        <section class="main-section" id="if_statements">
+            <header>
+                <h3>if Statements</h3>
+            </header>
+            <p>
+                Perhaps the most well-known statement type is the if statement. For example:
+            </p>
+            <code>
+            >>> x = int(input("Please enter an integer: "))<br>
+Please enter an integer: 42<br>
+>>> if x < 0:<br>
+... &nbsp;&nbsp;&nbsp;x = 0<br>
+... &nbsp;&nbsp;&nbsp;print('Negative changed to zero')<br>
+... elif x == 0:<br>
+... &nbsp;&nbsp;&nbsp;print('Zero')<br>
+... elif x == 1:<br>
+... &nbsp;&nbsp;&nbsp;print('Single')<br>
+... else:<br>
+... &nbsp;&nbsp;&nbsp;print('More')<br>
+...<br>
+More<br>
+        </code>
+            <p>There can be zero or more elif parts, and the else part is optional. The keyword ‘elif’ is short for
+                ‘else if’, and is useful to avoid excessive indentation. An if … elif … elif … sequence is a substitute
+                for the switch or case statements found in other languages.</p>
+        </section>
+
+        <section class="main-section" id="loops">
+            <header>
+                <h3>Loops</h3>
+            </header>
+            <p>
+                The for statement in Python differs a bit from what you may be used to in C or Pascal. Rather than
+                always iterating over an arithmetic progression of numbers (like in Pascal), or giving the user the
+                ability to define both the iteration step and halting condition (as C), Python’s for statement
+                iterates over the items of any sequence (a list or a string), in the order that they appear in the
+                sequence. For example (no pun intended):
+            </p>
+            <code>
+                >>> # Measure some strings:<br>
+... words = ['cat', 'window', 'defenestrate']<br>
+>>> for w in words:<br>
+... &nbsp;&nbsp;&nbsp;print(w, len(w))<br>
+...
+cat 3<br>
+window 6<br>
+defenestrate 12<br>
+            </code>
+            <p>
+                If you do need to iterate over a sequence of numbers, the built-in function range() comes in handy.
+                It generates arithmetic progressions:
+            </p>
+            <code>
+                >>> for i in range(5):<br>
+...&nbsp;&nbsp;&nbsp;print(i)<br>
+...
+0<br>
+1<br>
+2<br>
+3<br>
+4<br>
+            </code>
+        </section>
+    </main>
+
+    <script>
+        const navbar = document.querySelector('#navbar');
+        // document.querySelector("#hide").addEventListener("click",(e) => {navbar.style.width = '0';});
+        document.querySelector("#menubtn").addEventListener("click", (e) => {
+             
+                navbar.style.width = '200px';
+                menuOpen = true;
+                        
+            
+        });
+
+        document.querySelector('#closebtn').addEventListener('click', (e) => {
+            navbar.style.width = '0';
+        });
+
+        window.addEventListener('resize',(e)=> {
+            if(window.innerWidth > 600) {
+                console.log(screen.width);
+                navbar.style.width='19%'
+            }
+            else {
+                navbar.style.width='0px';
+            }
+        });
+    </script>
+</body>
+
+</html>
