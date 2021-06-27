@@ -187,6 +187,7 @@ input, label {
     #featured-img {
         max-width: 200px;
         max-height: 400px;
+        flex-direction: column-reverse;
     }
     #video {
         max-width: 300px;
