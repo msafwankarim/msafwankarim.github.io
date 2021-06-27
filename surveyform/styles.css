@@ -1,0 +1,55 @@
+body {
+	
+  font-family: Calibri;
+  
+  
+}
+#bg-image {
+	position: absolute;
+	height: 900px;
+	background-image: url("https://www.thenews.com.pk/assets/uploads/updates/2020-11-06/739942_2817803_iiui_updates.jpg");
+	background-size: cover;
+  background-repeat: no-repeat;
+}
+#title, #description {
+  text-align: center;
+  color: black;
+  
+}
+
+input, select, label, textarea {
+  padding: 7px;
+  border-radius: 5px;
+  border: none;
+  margin: 2px;
+  outline: none;
+}
+
+main {
+  width: 50%;
+  margin: auto;
+  z-index: 5;
+  
+}
+#survey-form {
+  
+  display: flex;
+  flex-direction: column;
+  background-color: #3B79C4;
+  padding: 30px;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 4px 10px 10px 6px gray;
+  
+}
+#submit {
+  background-color: #C4863B;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+#form-area {
+  color: white;
+}
+
+

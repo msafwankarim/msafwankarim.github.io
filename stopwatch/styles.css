@@ -1,0 +1,41 @@
+body {
+    font-size: 48px;
+
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 5em;
+    margin: 1em auto;
+    background-color: #34263C;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px 8px gray;
+}
+#stopwatch {
+    color: white;
+    margin: 100px auto;
+    font-family: Orbitron;
+}
+button {
+    border: none;
+    background-color: white ;
+    border-radius: 50%;
+    background-color: inherit;
+    margin: 0 0.6em;
+    cursor: pointer;
+}
+
+.resetbtn-icon {
+    font-size: 48px !important; 
+    color:white;
+    
+}
+
+.resetbtn-icon:hover {
+    color: red !important;
+}
