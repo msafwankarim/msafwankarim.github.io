@@ -17,7 +17,6 @@ main {
 #header {
     position: absolute;
     z-index: 5;
-    white-space: nowrap;
     display: flex;
     font-size: 16px;
     width: 100%;
@@ -32,6 +31,7 @@ main {
     position: fixed;
     top: 0;
     right: 0;
+    white-space: nowrap;
     padding: 20px 0px;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -180,7 +180,8 @@ section {
 #popup {
     background-color: white;
     height: 250px;
-    padding: 30px;
+    padding: 20px;
+    width: 90%;
     margin-top: 100px;
     position: relative;
 }
@@ -208,7 +209,9 @@ input, label {
 }
 
 @media (max-width: 700px) {
-    
+    #header {
+        font-size: 12px;
+    }
     #featured-img {
         max-width: 200px;
         max-height: 400px;
