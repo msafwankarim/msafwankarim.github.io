@@ -1,0 +1,124 @@
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+
+#weather-card {
+    box-shadow: 3px 3px 6px 6px rgba(0,0,0,0.3);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    position: relative;
+    
+}
+.invisible {
+    visibility: hidden;
+}
+.hidden {
+    display: none;
+}
+
+#dayimg-wrap {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+#dayimg {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+#locationtxt {
+    width: 75%;
+    padding: 5px;
+    margin: 3px 0px;
+}
+#location-form input[type="submit"] {
+    padding: 8px 10px;
+    background-color: #008060;
+    border: none;
+    color: white;
+    border-radius: 4px;
+}
+
+#icon-wrap {
+    width: 70px;
+    height: 70px;
+    background-color: lightcyan;
+    border-radius: 50%;
+    position: relative;
+    top: -35px;
+    margin-bottom: -40px;
+    border: 2px solid white;
+}
+
+
+#icon {
+    width: 100%;
+    height: 100%;
+}
+p {
+    margin: 5px;
+}
+#cityname {
+    font-size: x-large;
+}
+#temperature-wrap {
+    font-size: 48px;
+}
+
+#error {
+    width: 50%;
+    background-color: red;
+    color: white;
+    padding: 20px;
+    position: absolute;
+    bottom: -100px;
+    
+    /* animation-timing-function: cubic-bezier(0.1, 0.5, 1.0, 1.0); */  
+}
+
+
+#close {
+    float: right;
+}
+#close:hover{
+    cursor: pointer;
+}
+
+@keyframes toptobottom {
+    0% {
+        bottom: 3px;
+    }
+    100% {
+        bottom: -100px;
+    }
+}
+
+@keyframes bottomup {
+    0% {
+        bottom: -100px;
+    }
+    100% {
+        bottom: 3px;
+    }
+    
+}

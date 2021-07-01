@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Weather App</h1>
+    </header>
+    <main>
+        <form id="location-form">
+            <label>Enter the location for weather information</label><br/>
+            <input id="locationtxt" type="search" placeholder="Location">
+            <input type="submit" value="Search"/>
+            <br>
+        </form>
+        <div id="weather-card" class="invisible">
+            <div id="dayimg-wrap">
+                <img src="images/day.jpg" id="dayimg" />
+            </div>
+            <div id="icon-wrap">
+                <img src="" alt="" id="icon">
+            </div>
+            <p id="cityname">City Name</p>
+            <p id="weatherinfo">Weather condition</p>
+            <p id="temperature-wrap"><span id="temp">10</span>&deg;C</p>
+        </div>
+        <div id="error" class="hidden"><span>Invalid City Entered. Please enter a valid city</span><span id="close">X</span></span></div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
