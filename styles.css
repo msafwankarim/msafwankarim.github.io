@@ -1,0 +1,123 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
+}
+
+#welcome-section {
+    margin-top:20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    color: black;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    min-height: 90vh;
+}
+
+#navbar {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+#navbar li {
+    padding: 20px;
+    transition: background-color .3s;
+    
+}
+
+#navbar li a {
+    padding: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
+#navbar li:hover {
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
+}
+
+.project-tile {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 5px 5px 3px rgb(0, 0, 0, 0.2);
+    height: max-content;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    height: 516px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.project-title {
+    padding: 10px;
+}
+
+.proj-img {
+    background-color: bisque;
+    width: 100%;
+    height: 350px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border: none;
+}
+#contact-us {
+        
+        display: flex;
+        
+        align-items: center;
+        justify-content: center;
+}
+#contact-us-wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    
+}
+h2 {
+    text-align: center;
+}
+.contact-link {
+    margin: 20px;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    #projects {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+@media (max-width: 600px) {
+    #projects {
+        grid-template-columns: 1fr;
+    }
+    #navbar li {
+        padding: 12px;
+        
+    }   
+}
