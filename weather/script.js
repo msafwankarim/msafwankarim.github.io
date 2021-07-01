@@ -1,6 +1,6 @@
 const key = '542a992edf78b8126d983704e380467e';
-const baseUrl = 'http://api.openweathermap.org/data/2.5/weather?';
-const iconBase = 'http://openweathermap.org/img/w/';
+const baseUrl = 'https://api.openweathermap.org/data/2.5/weather?';
+const iconBase = 'https://openweathermap.org/img/w/';
 
 const form = document.querySelector("#location-form");
 const image = document.querySelector("#dayimg");
