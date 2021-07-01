@@ -102,7 +102,6 @@ main {
 .todo-description {
     width: 90%;
     text-align: left;
-    text-overflow: ellipsis;
 }
 .delete-btn {
     position: absolute;
