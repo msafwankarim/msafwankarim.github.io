@@ -47,7 +47,9 @@ body {
     
     min-height: 90vh;
 }
-
+nav {
+    width: 100%;
+}
 #navbar {
     list-style-type: none;
     display: flex;
