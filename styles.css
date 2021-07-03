@@ -1,9 +1,11 @@
 html {
     scroll-behavior: smooth;
 }
-
-body {
+* {
     margin: 0;
+    padding: 0;
+}
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: aliceblue;
 }
@@ -25,7 +27,8 @@ body {
     background-color: black;
     color: white;
     opacity: 0;
-    animation: fadein 2s ease-out 1s forwards;
+    animation: fadein 1.5s ease-out 0.75s forwards;
+    white-space: nowrap;
     
 }
 
