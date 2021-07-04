@@ -132,7 +132,7 @@ label {
 @keyframes popup {
     to {
         width: 350px;
-        padding: 30px 10px;
+        padding: 30px 3px;
         height: auto;
     }
 
