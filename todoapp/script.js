@@ -61,7 +61,7 @@ const filterTodos = term => {
 const removeTodo = todo => {
     localStorage.setItem("todos", JSON.stringify(getTodosFromStorage().filter(i => i !== todo.textContent)));
     todo.remove();
-    if(Array.from(todoList).length === 0)
+    if(Array.from(todoList.children).length === 0)
         notodos.className = "";
 
 }
