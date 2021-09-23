@@ -1,0 +1,98 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who am I?</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <header>
+        <ul id="navbar" class="hide">
+            <li><a href="#welcome-section">Home</a></li>
+            <li><a href="#projects-wrap">Projects</a></li>
+            <li><a href="#contact-us-wrap">Contact Me</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="intro-section">
+            <div class="intro-section__content">
+                <h1 class="intro__name">Muhammad Safwan Karim</h1>
+                <div class="intro__occupation">Software Engineer</div>
+                <div class="intro__image-headshot">
+                    <img src="./img/cropped.jpg" alt="Headshot image">
+                </div>
+                <div class="intro__description">
+                    <div class="intro-desc__content">
+                        Hi! My name is Safwan and I am studying Software Engineering at <abbr
+                            title="International Islamic University Islamabad">IIUI</abbr>. I am interested in Computers
+                        generally but my major field of interest is Cyber Security.
+                    </div>
+                    <div class="intro__social-links">
+                        <a href="https://www.facebook.com/m.safwan.karim/" target="_blank" class="btn"><i
+                                class="fa fa-facebook"></i></a>
+                        <a href="https://github.com/msafwankarim/" target="_blank" class="btn"><i
+                                class="fa fa-github"></i></a>
+                        <a href="#" class="btn"><i class="fa fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <button id="learn-more-btn" class="btn">Learn More <i class="fa fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <div class="card-wrapper hide">
+            <div id="info-card">
+                <span id="close-btn"><i class="fa fa-close"></i></span>
+                <div class="card__details">
+                    <table>
+                        <tr class="card__name">
+                            <td>Name:</td>
+                            <td>Muhammad Safwan Karim</td>
+                        </tr>
+                        <tr class="card__reg-num">
+                            <td> Regestration# </td>
+                            <td> 3848-FBAS/BSSE/F18</td>
+                        </tr>
+                        <tr class="card__email">
+                            <td>Email:</td>
+                            <td> <a href="mailto:muhammad.bsse3848@iiu.edu.pk">muhammad.bsse3848@iiu.edu.pk</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <form>
+                    <fieldset>
+                        <legend>
+                            <h3>Contact Me</h3>
+                        </legend>
+                        <label for="name">Name</label><br />
+                        <input type="text" placeholder="Name" /><br />
+
+                        <label for="">Email</label><br />
+                        <input type="email" placeholder="Email" /><br />
+
+                        <label for="">Message</label><br />
+                        <textarea placeholder="Your message ..." rows="4" cols="30"></textarea>
+                        <br />
+                    </fieldset>
+                    <input type="submit" value="Submit" class="btn" />
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.querySelector("#learn-more-btn").addEventListener("click", () => {
+            document.querySelector(".card-wrapper.hide").classList.remove("hide");
+        });
+        document.querySelector("#close-btn").addEventListener("click", () => {
+            document.querySelector(".card-wrapper").classList.add("hide");
+        });
+    </script>
+</body>
+
+</html>
