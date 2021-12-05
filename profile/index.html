@@ -44,55 +44,10 @@
                 <button id="learn-more-btn" class="btn">Learn More <i class="fa fa-arrow-right"></i></button>
             </div>
         </div>
-        <div class="card-wrapper hide">
-            <div id="info-card">
-                <span id="close-btn"><i class="fa fa-close"></i></span>
-                <div class="card__details">
-                    <table>
-                        <tr class="card__name">
-                            <td>Name:</td>
-                            <td>Muhammad Safwan Karim</td>
-                        </tr>
-                        <tr class="card__reg-num">
-                            <td> Regestration# </td>
-                            <td> 3848-FBAS/BSSE/F18</td>
-                        </tr>
-                        <tr class="card__email">
-                            <td>Email:</td>
-                            <td> <a href="mailto:muhammad.bsse3848@iiu.edu.pk">muhammad.bsse3848@iiu.edu.pk</a>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <form>
-                    <fieldset>
-                        <legend>
-                            <h3>Contact Me</h3>
-                        </legend>
-                        <label for="name">Name</label><br />
-                        <input type="text" placeholder="Name" /><br />
-
-                        <label for="">Email</label><br />
-                        <input type="email" placeholder="Email" /><br />
-
-                        <label for="">Message</label><br />
-                        <textarea placeholder="Your message ..." rows="4" cols="30"></textarea>
-                        <br />
-                    </fieldset>
-                    <input type="submit" value="Submit" class="btn" />
-                </form>
-            </div>
-        </div>
+        
     </main>
 
-    <script>
-        document.querySelector("#learn-more-btn").addEventListener("click", () => {
-            document.querySelector(".card-wrapper.hide").classList.remove("hide");
-        });
-        document.querySelector("#close-btn").addEventListener("click", () => {
-            document.querySelector(".card-wrapper").classList.add("hide");
-        });
-    </script>
+    
 </body>
 
 </html>
