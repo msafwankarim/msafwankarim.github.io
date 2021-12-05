@@ -141,6 +141,7 @@ button:hover, .btn:hover {
     font-size: 1.5em;
     bottom: 50px;
     overflow: hidden;
+    text-decoration: none;
 }
 #learn-more-btn .fa.fa-arrow-right {
     transition: .5s transform;
