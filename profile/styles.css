@@ -66,8 +66,8 @@ nav {
     content: " ";
     position:absolute;
     height: 100%;
-    width: 125%;
-    top: 50vh;
+    width: 150%;
+    top: 47vh;
     background-color: black;
     z-index: -1;
     transform: rotate(7deg);
@@ -83,7 +83,7 @@ nav {
     color: white;
 }
 .intro__description {
-    max-width: 450px;
+    max-width: 300px;
     margin-bottom: 25px;
 }
 .intro-desc__content {
