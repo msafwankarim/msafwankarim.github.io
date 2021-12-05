@@ -60,9 +60,12 @@ nav {
     text-align: center;
     background-color: black;
     color: white;
+    z-index: 5;
     
 }
-
+#navbar code {
+    font-size: 16px;
+}
 
 #navbar li {
     
