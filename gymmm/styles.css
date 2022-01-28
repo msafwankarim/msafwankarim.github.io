@@ -153,24 +153,29 @@ header a.btn {
   font-weight: bold;
 }
 .form form {
-  display: inline-flex;
-  border-radius: 60px;
-  width: 80%;
+  display: flex;
+  flex-direction: column;
+  /* border-radius: 60px; */
+  width: 100%;
   max-width: 300px;
   /* border: 1px solid; */
   padding: 5px;
-  background-color: white;
+  /* background-color: white; */
   padding-left: 30px;
+}
+.form-row {
+  margin: 8px 0;
 }
 .form input, .form button {
   display: block;
   height: 50px;
-  border: 0
+  border: 0;
+  border-radius: 30px;
+  padding-left: 30px;
 }
 .form input {
   /* border: 60px; */
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
+  
   width: 300px;
 
 }
@@ -180,12 +185,23 @@ header a.btn {
 .form button {
   background-color: black;
   color: white;
-  font-weight: bold;
-  font-size: 1.3em;
   border: 0;
-  padding: 0 20px;
-  border-radius: 50%;
+  padding: 0 10px;
   cursor: pointer;
+  margin: auto;
+  display: block;
+}
+.email-row {
+  background-color: white;
+  border-radius: 30px;
+}
+.email-row input{
+  width: 75%;
+  display: inline-block;
+}
+.email-row button {
+  width: 23%;
+  display: inline-block;
 }
 .hoverable button span, .hoverable .btn span {
   transition: transform .5s, color .5s;
@@ -269,7 +285,7 @@ header a.btn {
   .product-grid .product-card{
     margin-top: 1em;
   }
-  .form input {
+  .form input:not(.email) {
     width: 100%;
   }
   .sm-hide {
@@ -277,5 +293,8 @@ header a.btn {
   }
   .mob-header.hide {
     display: block;
+  }
+  #subscriberForm {
+    padding: 0;
   }
 }
