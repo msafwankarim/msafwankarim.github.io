@@ -29,7 +29,7 @@ const loadJoke = () => {
 // https://official-joke-api.appspot.com/random_joke
 const getJokes = () => {
     const request = new XMLHttpRequest();
-    request.open("GET", "https://official-joke-api.appspot.com/random_ten");
+    request.open("GET", "https://v2.jokeapi.dev/joke/Any?blacklistFlags=racist&amount=10");
 
     request.addEventListener("readystatechange", () => {
         if (request.readyState === 4 && request.status === 200) {
