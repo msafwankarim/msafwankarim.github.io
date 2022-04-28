@@ -19,7 +19,7 @@ const loadJoke = () => {
             case "twopart":
                 document.querySelector("#punchline-wrap").style.display ="block";
                 setupspan.textContent = jokes[index].setup;
-                punchlinespan.textContent = jokes[index].punchline;
+                punchlinespan.textContent = jokes[index].delivery;
                 break;
         }                
         index++;
