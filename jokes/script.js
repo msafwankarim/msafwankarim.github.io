@@ -66,5 +66,8 @@ showpunchBtn.addEventListener("click", ()=> {
     punchlinespan.classList.remove("blur");
 
 });
-
+punchlinespan.onclick = () => {
+    punchlinespan.classList.add("blur");
+    showpunchBtn.classList.remove("hide");
+}
 getJokes();
