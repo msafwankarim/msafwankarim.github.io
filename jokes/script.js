@@ -9,8 +9,19 @@ let index = 0;
 let firstJoke = true;
 const loadJoke = () => {
     if(jokes.length !== 0) {
-        setupspan.textContent = jokes[index].setup;
-        punchlinespan.textContent = jokes[index].punchline;
+        let currentJoke = jokes[index];
+
+        switch(currentJoke.type) {
+            case "single":
+                document.querySelector("#punchline-wrap").style.display ="none";
+                setupspan.textContent = currentJoke.joke;
+                break;
+            case "twopart":
+                document.querySelector("#punchline-wrap").style.display ="block";
+                setupspan.textContent = jokes[index].setup;
+                punchlinespan.textContent = jokes[index].punchline;
+                break;
+        }                
         index++;
     }
 }
@@ -22,7 +33,12 @@ const getJokes = () => {
 
     request.addEventListener("readystatechange", () => {
         if (request.readyState === 4 && request.status === 200) {
-            jokes = JSON.parse(request.responseText);
+            let response = JSON.parse(request.responseText);
+            if(!response.error) {
+                jokes = response.jokes;
+            } else {
+                alert("API returned an error");
+            }
             // console.log(jokes);
             if(firstJoke) {
                 loadJoke(); firstJoke = false; }
