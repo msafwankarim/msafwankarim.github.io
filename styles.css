@@ -14,6 +14,11 @@ body {
     width: 100%;
 }
 
+#projects-wrap {
+    max-width: 1280px;
+    margin: auto;
+}
+
 #projects-wrap > h2 {
     padding-top: 100px
 }
