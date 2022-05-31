@@ -149,9 +149,5 @@ h2 {
 @media (max-width: 600px) {
     #projects {
         grid-template-columns: 1fr;
-    }
-    #navbar li {
-        padding: 12px;
-        
     }   
 }
